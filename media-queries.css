@@ -1,0 +1,48 @@
+@media (max-width: 1199px) {
+    .modal-nav-body {
+        height: 100vh;
+    }
+}
+
+@media (max-height: 515px) {
+    #main .overlay {
+        height: 377px;
+    }
+}
+
+@media (max-width: 270px) {
+    #main .overlay {
+        width: 268px;
+    }
+}
+
+@media (max-width: 600px) {
+    #main .ws {
+        max-width: 250px;
+    }
+
+    #main .tss {
+        vertical-align: text-top; 
+        line-height: 0.50cm;
+        font-size: 25px;
+    }
+
+    #main .tsn {
+        line-height: 0.50cm;
+        font-size: 30px;
+      }
+
+    #main .bs {
+        font-size: 10px;
+    }
+
+    #main .imagen_fondo {
+        background-image: url(./assets/images/bg_responsive.png);
+      }
+
+    #header, #main p, #me, #services, #portfolio, #contact, #footer {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+}
