@@ -15,7 +15,7 @@ body {
   padding-right: 10px!important;
 }
 
-.text-portfolio {
+.text-cv {
     background-color: #083872;
     font-size: 1rem;
   }
@@ -28,18 +28,15 @@ body {
     justify-content: center;
   }
   
-  .btn-portfolio {
+  .btn-cv {
     color: white;
     height: 50px;
     width: 177.77px;
   }
   
-  .btn-portfolio:hover {
+  .btn-cv:hover {
     background-color: gray;
-  }
-
-  .ab:hover {
-    opacity: 0.5;
+    box-shadow: none!important;
   }
   
   #header img {
@@ -128,6 +125,10 @@ body {
   #me .about {
     line-height: 40px;
   }
+
+  #me .about a {
+    text-decoration: none;
+  }
   
   #me .presentation {
     margin-top: 30px;
@@ -153,7 +154,7 @@ body {
   #services .bi-journal-check {
     font-size: 40px;
     margin: 20px;
-    color: black!important;
+    color: #0e76a8;
   }
   #services .bi-megaphone-fill {
     font-size: 40px;
@@ -164,6 +165,33 @@ body {
     font-size: 40px;
     margin: 20px;
     color: var(--green);
+  }
+
+  #services div:hover > .bi-journal-check,
+  #services div:hover > .bi-megaphone-fill,
+  #services div:hover > .bi-robot {
+    color: #414141;
+  }
+
+  .text-portfolio {
+    background-color: #083872;
+    font-size: 14px;
+  }
+  
+  .btn-portfolio {
+    color: white;
+    border-radius: 5px;
+    background-color: #083872;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    width: 87.13px;
+  }
+  
+  .btn-portfolio:hover {
+    background-color: gray;
+    box-shadow: none!important;
   }
 
   #portfolio p {
@@ -233,7 +261,7 @@ body {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.7);
   }
-  .cont:hover .overlayBottom {
+  .cont figure:hover .overlayBottom {
     transition: all 0.3s linear;
     height: 100%;
   }
@@ -245,6 +273,10 @@ body {
   #contact a {
     margin-bottom: 10px; 
     text-decoration: none;
+  }
+  
+  #contact a:hover > .ab {
+    color: #414141;
   }
 
   #contact .fa-linkedin-in {
