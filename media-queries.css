@@ -16,11 +16,14 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 991px) {
     #main .ws {
         max-width: 250px;
+        margin-bottom: 34px;
     }
+}
 
+@media (max-width: 600px) {
     #main .tss {
         vertical-align: text-top; 
         line-height: 0.50cm;

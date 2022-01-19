@@ -40,7 +40,7 @@
                             <a class="nav-link text-center" href="#main">Home</a>
                         </li>
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link text-center" href="#me">About</a>
+                            <a class="nav-link text-center" href="#about">About</a>
                         </li>
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link text-center" href="#services">Services</a>
@@ -63,10 +63,12 @@
         <div class="imagen_fondo">
             <div class="overlay">
                 <div class="container">
-                    <div class="row align-items-center d-flex justify-content-lg-center" style="height: 100vh;">
+                    <div class="row align-content-center align-items-sm-center d-flex justify-content-center" style="height: 100vh;">
                         <div class="col-12 col-lg-4 pl-0 pr-0 pt-4 pb-0" id="ideee">
-                            <img src="https://avatars.githubusercontent.com/u/56992179?v=4" alt="Profile"
+                            <picture>
+                            <img loading="lazy" src="https://avatars.githubusercontent.com/u/56992179?v=4" alt="Profile"
                                 class="center rounded-circle ws" style="filter: grayscale(0%);">
+                            </picture>
                         </div>
                         <div class="col-12 col-lg-4 pt-0 pb-2 text-white text-nowrap">
                             <p class="tss">Hi!</p>
@@ -84,7 +86,7 @@
     <!-- /Main -->
 
     <!-- About -->
-    <section id="me" class="pt-3 pb-3">
+    <section id="about" class="pt-3 pb-3">
         <div class="container">
             <div class="row pt-4">
                 <div class="col-12 col-lg-6 text-left pl-0 pr-0">
@@ -103,7 +105,7 @@
                         I am a graduate of Engineering in Cs. Computing of the Meritorious Autonomous University of
                         Puebla.
                         If I can help you, do not hesitate to contact me</p>
-                    <a href="./assets/images/@.png" download="Gilberto P. CV.pdf">
+                    <a href="./assets/images/Gilberto P. CV.pdf" download="Gilberto P. CV.pdf">
                         <button type="button" class="shadow-none btn btn-cv text-cv">
                             <i class="bi bi-file-earmark-arrow-down-fill"
                                 style="padding-right: 5%; font-size: 18px;"></i>
@@ -116,32 +118,32 @@
 
                     <div class="row text-center">
                         <div class="col-4 col-lg-4 pt-1 pb-1 pt-lg-4 pb-lg-4">
-                            <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="Bootstrap icon"
-                                width="78" height="78">
+                            <img loading="lazy" src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg"
+                                alt="Bootstrap icon" width="78" height="78">
                             <p>Bootstrap</p>
                         </div>
                         <div class="col-4 col-lg-4 pt-1 pb-1 pt-lg-4 pb-lg-4">
-                            <img class="larger" src="https://cdn.worldvectorlogo.com/logos/python-5.svg"
+                            <img loading="lazy" class="larger" src="https://cdn.worldvectorlogo.com/logos/python-5.svg"
                                 alt="Python logo vector" width="78" height="78">
                             <p>Python</p>
                         </div>
                         <div class="col-4 col-lg-4 pt-1 pb-1 pt-lg-4 pb-lg-4">
-                            <img class="larger" src="https://cdn.worldvectorlogo.com/logos/mysql-3.svg"
+                            <img loading="lazy" class="larger" src="https://cdn.worldvectorlogo.com/logos/mysql-3.svg"
                                 alt="MySQL logo vector" width="78" height="78">
                             <p>MySQL</p>
                         </div>
                         <div class="col-4 col-lg-4 pt-1 pb-1 pt-lg-4 pb-lg-4 align-self-center">
-                            <img class="larger" src="https://cdn.worldvectorlogo.com/logos/flask.svg"
+                            <img loading="lazy" class="larger" src="https://cdn.worldvectorlogo.com/logos/flask.svg"
                                 alt="Flask logo vector" width="78" height="78">
                             <p>Flask</p>
                         </div>
                         <div class="col-4 col-lg-4 pt-1 pb-1 pt-lg-4 pb-lg-4 align-middle">
-                            <img src="https://cdn.worldvectorlogo.com/logos/django-community.svg"
+                            <img loading="lazy" src="https://cdn.worldvectorlogo.com/logos/django-community.svg"
                                 alt="Django Community logo vector" width="78" height="78">
                             <p>Django</p>
                         </div>
                         <div class="col-4 col-lg-4 pt-1 pb-1 pt-lg-4 pb-lg-4">
-                            <img class="larger" src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg"
+                            <img loading="lazy" class="larger" src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg"
                                 alt="Fastapi logo vector" width="78" height="78">
                             <p>FastAPI</p>
                         </div>
@@ -199,7 +201,7 @@
     </section>
     <!-- /Services -->
 
-    <!-- Portfolio col text-left -->
+    <!-- Portfolio -->
     <section id="portfolio" class="pt-3 pb-3">
         <div class="container">
             <div class="row pt-4">
@@ -211,7 +213,7 @@
             <div class="row pb-4 text-center">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 pl-0 pr-0 pb-3 cont">
                     <figure>
-                        <img src="assets/portfolio/Fotogram.png" class="fs" alt="Fotogram">
+                        <img loading="lazy" src="assets/portfolio/Fotogram.png" class="fs" alt="Fotogram">
                         <div class="overl overlayBottom">
                             <div class="row portfolios text-center">
                                 <div class="col-12" style="padding-top: 2em">
@@ -221,16 +223,24 @@
                                     <p class="h6">Web aplication: Django and Bootstrap</p>
                                 </div>
                                 <div class="col-12 pt-3" style="padding-bottom: 2em">
-                                    <div class="row ">
-                                        <div class="col-6">
+                                    <div class="row align-items-center d-flex justify-content-center">
+                                        <div class="col-4 col-lg-4">
                                             <p class="h5">
-                                                <button class="shadow-none btn btn-portfolio text-portfolio">
-                                                    Website
-                                                </button></p>
+                                                <a href="#">
+                                                    <button class="shadow-none btn btn-portfolio text-portfolio">
+                                                        <i class="bi bi-globe"></i>
+                                                        Website
+                                                    </button></a>
+                                            </p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4 col-lg-4">
                                             <p class="h5"><a href="https://github.com/perezgarridogilb/Fotogram"
-                                                    target="_blank">Repository</a></p>
+                                                    target="_blank">
+                                                    <button class="shadow-none btn btn-portfolio text-portfolio">
+                                                        <i class="bi bi-github"></i>
+                                                        Repository
+                                                    </button></a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +249,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 pl-0 pr-0 pb-3 cont">
                     <figure>
-                        <img src="assets/portfolio/Blogs.png" class="fs" alt="Blogs">
+                        <img loading="lazy" src="assets/portfolio/Blogs.png" class="fs" alt="Blogs">
                         <div class="overl overlayBottom">
                             <div class="row portfolios text-center">
                                 <div class="col-12" style="padding-top: 2em">
@@ -249,16 +259,26 @@
                                     <p class="h6">Web aplication: HTML and CSS</p>
                                 </div>
                                 <div class="col-12 pt-3" style="padding-bottom: 2em">
-                                    <div class="row ">
-                                        <div class="col-6">
+                                    <div class="row align-items-center d-flex justify-content-center">
+                                        <div class="col-4 col-lg-4">
                                             <p class="h5"> <a
                                                     href="https://perezgarridogilb.live/Proyectos-fronted/Curso%20Pr%C3%A1ctico%20de%20Maquetaci%C3%B3n%20en%20CSS/"
-                                                    target="_blank">Website</a></p>
+                                                    target="_blank">
+                                                    <button class="shadow-none btn btn-portfolio text-portfolio">
+                                                        <i class="bi bi-globe"></i>
+                                                        Website
+                                                    </button></a>
+                                            </p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4 col-lg-4">
                                             <p class="h5"><a
                                                     href="https://github.com/perezgarridogilb/Proyectos-fronted/tree/master/Curso%20Pr%C3%A1ctico%20de%20Maquetaci%C3%B3n%20en%20CSS"
-                                                    target="_blank">Repository</a></p>
+                                                    target="_blank">
+                                                    <button class="shadow-none btn btn-portfolio text-portfolio">
+                                                        <i class="bi bi-github"></i>
+                                                        Repository
+                                                    </button></a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -267,7 +287,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 pl-0 pr-0 pb-3 cont">
                     <figure>
-                        <img src="assets/portfolio/PlatziConf.png" class="fs" alt="PlaziConf">
+                        <img loading="lazy" src="assets/portfolio/PlatziConf.png" class="fs" alt="PlaziConf">
                         <div class="overl overlayBottom">
                             <div class="row portfolios text-center">
                                 <div class="col-12" style="padding-top: 2em">
@@ -277,16 +297,26 @@
                                     <p class="h6">Web aplication: Bootstrap, HTML and CSS</p>
                                 </div>
                                 <div class="col-12 pt-3" style="padding-bottom: 2em">
-                                    <div class="row ">
-                                        <div class="col-6">
+                                    <div class="row align-items-center d-flex justify-content-center">
+                                        <div class="col-4 col-lg-4">
                                             <p class="h5"> <a
                                                     href="https://perezgarridogilb.live/Proyectos-fronted/Curso%20de%20Bootstrap%204/"
-                                                    target="_blank">Website</a></p>
+                                                    target="_blank">
+                                                    <button class="shadow-none btn btn-portfolio text-portfolio">
+                                                        <i class="bi bi-globe"></i>
+                                                        Website
+                                                    </button></a>
+                                            </p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4 col-lg-4">
                                             <p class="h5"><a
                                                     href="https://github.com/perezgarridogilb/Proyectos-fronted/tree/master/Curso%20de%20Bootstrap%204"
-                                                    target="_blank">Repository</a></p>
+                                                    target="_blank">
+                                                    <button class="shadow-none btn btn-portfolio text-portfolio">
+                                                        <i class="bi bi-github"></i>
+                                                        Repository
+                                                    </button></a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +325,8 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 pl-0 pr-0 pb-3 cont">
                     <figure>
-                        <img src="assets/portfolio/SistemaWeb.png" class="fs" alt="Sistema web de quejas">
+                        <img loading="lazy" src="assets/portfolio/SistemaWeb.png" class="fs"
+                            alt="Sistema web de quejas">
                         <div class="overl overlayBottom">
                             <div class="row portfolios text-center">
                                 <div class="col-12" style="padding-top: 2em">
@@ -305,14 +336,25 @@
                                     <p class="h6">Web aplication: PHP, HTML and CSS</p>
                                 </div>
                                 <div class="col-12 pt-3" style="padding-bottom: 2em">
-                                    <div class="row ">
-                                        <div class="col-6">
-                                            <p class="h5">Website</p>
+                                    <div class="row align-items-center d-flex justify-content-center">
+                                        <div class="col-4 col-lg-4">
+                                            <p class="h5">
+                                                <a href="">
+                                                    <button class="shadow-none btn btn-portfolio text-portfolio">
+                                                        <i class="bi bi-globe"></i>
+                                                        Website
+                                                    </button></a>
+                                            </p>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4 col-lg-4">
                                             <p class="h5"><a
                                                     href="https://github.com/perezgarridogilb/Sistema-web-de-quejas-en-una-escuela-facultad"
-                                                    target="_blank">Repository</a></p>
+                                                    target="_blank">
+                                                    <button class="shadow-none btn btn-portfolio text-portfolio">
+                                                        <i class="bi bi-github"></i>
+                                                        Repository
+                                                    </button></a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -394,7 +436,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <script src="scroll.js"></script data-toggle="collapse" data-target=".navbar-collapse.show">
+    <script src="scroll.js"></script>
     <script src="navbar.js"></script>
 </body>
 

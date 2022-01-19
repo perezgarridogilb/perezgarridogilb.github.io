@@ -5,12 +5,16 @@
   box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: "Roboto", sans-serif;
     background: white;
 }
 
-#header, #main p, #me, #services, #portfolio, #contact, #footer {
+#header, #main p, #about, #services, #portfolio, #contact, #footer {
   padding-left: 10px!important;
   padding-right: 10px!important;
 }
@@ -19,16 +23,13 @@ body {
     background-color: #083872;
     font-size: 1rem;
   }
-
-  .btn {
+  
+  .btn-cv {
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     background-color: #083872;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btn-cv {
     color: white;
     height: 50px;
     width: 177.77px;
@@ -119,31 +120,31 @@ body {
     align-items: center;
   }
 
-  #me p {
+  #about p {
     color: #414141!important;
   }
-  #me .about {
+  #about .about {
     line-height: 40px;
   }
 
-  #me .about a {
+  #about .about a {
     text-decoration: none;
   }
   
-  #me .presentation {
+  #about .presentation {
     margin-top: 30px;
     padding-bottom: 20px;
   }
 
-  #me .fa-git-alt {
+  #about .fa-git-alt {
     color: #f34f29;
   }
 
-  #me .fa-angular {
+  #about .fa-angular {
     color: var(--red);
   }
 
-  #me .fa-github {
+  #about .fa-github {
     color: black!important;
   }
 
@@ -175,18 +176,21 @@ body {
 
   .text-portfolio {
     background-color: #083872;
+    text-align: center;
     font-size: 14px;
+  }
+
+  .btn-portfolio a {
+    text-decoration: none;
   }
   
   .btn-portfolio {
-    color: white;
-    border-radius: 5px;
-    background-color: #083872;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 26px;
-    width: 87.13px;
+    border-radius: 1px;
+    background: #191919;
+    color: #f5f5f5;
+    height: 27px;
+    width: 104px;
+    padding: 0%;
   }
   
   .btn-portfolio:hover {
@@ -208,6 +212,7 @@ body {
     border-radius: 10px;
     object-fit: cover;
     width: 100%;
+    height: 190px;
     width: 373.33px;
     overflow: hidden;
     cursor: pointer;
