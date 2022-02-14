@@ -14,6 +14,12 @@ body {
     background: white;
 }
 
+section {
+  padding: 90px 0;
+  text-align: center;
+  background: white;
+}
+
 #header, #main p, #about, #services, #portfolio, #contact, #footer {
   padding-left: 10px!important;
   padding-right: 10px!important;
@@ -49,11 +55,12 @@ body {
     transition: 0.3s;
   }
 
-  #header  {
-    min-height: 60px;
+  #header.abajo{
+    background-color: rgba(0, 0, 0, 0.9); 
+    transition: 0.3s;
   }
 
-  #header.abajo{
+  .color{
     background-color: rgba(0, 0, 0, 0.9); 
     transition: 0.3s;
   }
@@ -79,8 +86,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 100vh;
-    z-index: -1;
+    height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;    z-index: -1;
   }
 
   .tss {
@@ -111,8 +119,9 @@ body {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    min-height: 100vh;
-  }
+    height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;  }
 
   #main .rw {
     display: flex;
@@ -140,8 +149,8 @@ body {
     color: #f34f29;
   }
 
-  #about .fa-angular {
-    color: var(--red);
+  #about .fa-docker {
+    color: #2496ed;
   }
 
   #about .fa-github {
@@ -265,9 +274,12 @@ body {
     left:0;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
   }
   .cont figure:hover .overlayBottom {
-    transition: all 0.3s linear;
+    transition: all 0.5s ease;
     height: 100%;
   }
 
