@@ -1,9 +1,9 @@
 @media (max-width: 1199px) {
     .modal-nav-body {
-        height: 100vh;
+        height    : 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
-    }
+    } 
 }
 
 @media (max-height: 515px) {
@@ -20,22 +20,22 @@
 
 @media (max-width: 991px) {
     #main .ws {
-        max-width: 250px;
+        max-width    : 250px;
         margin-bottom: 34px;
     }
 }
 
 @media (max-width: 600px) {
     #main .tss {
-        vertical-align: text-top; 
-        line-height: 0.50cm;
-        font-size: 25px;
+        vertical-align: text-top;
+        line-height   : 0.50cm;
+        font-size     : 25px;
     }
 
     #main .tsn {
         line-height: 0.50cm;
-        font-size: 30px;
-      }
+        font-size  : 30px;
+    }
 
     #main .bs {
         font-size: 10px;
@@ -43,11 +43,21 @@
 
     #main .imagen_fondo {
         background-image: url(./assets/images/bg_responsive.png);
-      }
+    }
 
-    #header, #main p, #me, #services, #portfolio, #contact, #footer {
-        padding-left: 10px;
+    #about .presentation {
+        margin-top: 0px!important;
+    }
+
+    #header,
+    #main p,
+    #me,
+    #services,
+    #portfolio,
+    #contact,
+    #footer {
+        padding-left : 10px;
         padding-right: 10px;
-      }
+    }
 
 }
