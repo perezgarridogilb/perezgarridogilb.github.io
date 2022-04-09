@@ -1,21 +1,10 @@
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     .modal-nav-body {
         height    : 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
-    } 
-}
-
-@media (max-height: 515px) {
-    #main .overlay {
-        height: 377px;
     }
-}
 
-@media (max-width: 270px) {
-    #main .overlay {
-        width: 268px;
-    }
 }
 
 @media (max-width: 991px) {
@@ -46,7 +35,20 @@
     }
 
     #about .presentation {
-        margin-top: 0px!important;
+        margin-top: 0px !important;
+    }
+
+    #about img {
+        width : 50px!important;
+        height: 50px!important;
+    }
+
+    #about .fab {
+        font-size: 50px!important;
+    }
+
+    #about .about p {
+        padding-right: 10px!important;
     }
 
     #header,

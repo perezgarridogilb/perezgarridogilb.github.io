@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+  --just-green: #135bb3;
+  --red: #d62d20;
+  --orange: #e34c26;
+  --green: #008744;
+  --yellow: #ffa700;
+  --blue: #3367d6; 
+  --black: #000000; 
+}
+
 * {
   margin    : 0;
   padding   : 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Roboto", sans-serif;
-  background : white;
+  background : white; 
+  min-width: 320px; 
 }
 
 section {
@@ -37,7 +44,7 @@ section {
 }
 
 .text-cv {
-  background-color: #083872;
+  background-color: var(--just-green);
   font-size       : 1rem;
 }
 
@@ -45,7 +52,7 @@ section {
   align-items     : center;
   justify-content : center;
   border-radius   : 5px;
-  background-color: #083872;
+  background-color: var(--just-green);
   display         : inline-flex;
   color           : white;
   height          : 50px;
@@ -63,12 +70,12 @@ section {
 
 .navbar-brand::before {
   content: "<";
-  color: #083872;
+  color: var(--just-green);
 }
 
 .navbar-brand::after {
   content: "/>";
-  color: #083872;
+  color: var(--just-green);
 }
 
 nav {
@@ -166,7 +173,8 @@ nav {
   background-size      : cover;
   height               : 100vh;
   min-height           : fill-available;
-  min-height           : -webkit-fill-available;
+  min-height           : -webkit-fill-available; 
+  min-width: 320px; 
   z-index              : -1;
 }
 
@@ -199,8 +207,9 @@ nav {
   right           : 0;
   background-color: rgba(0, 0, 0, 0.8);
   height          : 100vh;
-  min-height      : fill-available;
+  min-height      : fill-available; 
   min-height      : -webkit-fill-available;
+  min-width: 320px; 
 }
 
 #main .rw {
@@ -213,17 +222,27 @@ nav {
   color: #414141 !important;
 }
 
-#about .about {
+#about .about p {
+  padding-right: 80px; 
   line-height: 40px;
 }
 
 #about .about a {
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 #about .presentation {
   font-size: 1.5em;
   margin-top: 30px; 
+}
+
+#about img {
+  width: 65px; 
+  height: 65px; 
+}
+
+#about .fab {
+  font-size: 65px; 
 }
 
 #about .fa-git-alt {
@@ -243,37 +262,51 @@ nav {
 }
 
 #services .text-decoration {
-  padding: 20px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
 }
 
 #services .bi-journal-check {
   font-size: 45px;
   margin   : 20px;
-  color    : #0e76a8;
+  color    : var(--red);
 }
 
 #services .bi-megaphone-fill {
   font-size: 45px;
   margin   : 20px;
-  color    : var(--orange);
+  color    : var(--yellow);
 }
 
 #services .bi-robot {
   font-size: 45px;
   margin   : 20px;
+  color    : var(--blue);
+}
+
+#services .bi-code-slash {
+  font-size: 45px;
+  margin   : 20px;
   color    : var(--green);
 }
 
+
 #services div:hover>.bi-journal-check,
 #services div:hover>.bi-megaphone-fill,
-#services div:hover>.bi-robot {
+#services div:hover>.bi-robot, 
+#services div:hover>.bi-code-slash {
+  transition: all 0.3s; 
   color: #414141;
 }
 
 .text-portfolio {
-  background-color: #083872;
+  background-color: var(--just-green);
   text-align      : center;
   font-size       : 14px;
+}
+
+#portfolio p .subtitle {
+  margin-bottom: 20px;
 }
 
 .btn-portfolio a {
