@@ -1,8 +1,38 @@
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .modal-nav-body {
         height    : 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .row {
+        margin-right: -25px;
+        margin-left: -25px;
+    }
+    
+    section {
+        padding: 90px 0;
+    }
+
+    #header .navbar-brand{
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    #header .collapse{
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    .navbar-dark .navbar-brand {
+        font-size: 22px;
+    }
+
+    #services .h6p { 
+        font-size: 1.17rem;
     }
 
 }
@@ -12,6 +42,24 @@
         max-width    : 250px;
         margin-bottom: 34px;
     }
+    
+    .h2 {
+    font-size: 25px!important;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    #about .skills {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    #services .row div {
+        margin: 20px 0!important;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -32,6 +80,10 @@
 
     #main .imagen_fondo {
         background-image: url(./assets/images/bg_responsive.png);
+    }
+
+    section {
+        padding: 40px 0;
     }
 
     #about .presentation {
