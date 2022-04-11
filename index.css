@@ -7,6 +7,7 @@
   --green: #008744;
   --yellow: #ffa700;
   --blue: #3367d6; 
+  --grey: #414141; 
   --black: #000000; 
 }
 
@@ -23,7 +24,6 @@ body {
 }
 
 section {
-  padding   : 90px 0;
   text-align: center;
   background: white;
 }
@@ -41,6 +41,11 @@ section {
 
 .h2 {
   margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.h5{
+  font-size: 1.17em;
 }
 
 .text-cv {
@@ -60,6 +65,7 @@ section {
 }
 
 .btn-cv:hover {
+  transition: all 0.3s; 
   background-color: gray;
   box-shadow      : none !important;
 }
@@ -258,7 +264,17 @@ nav {
 }
 
 #services p {
-  color: #414141 !important;
+  color: var(--grey) !important;
+}
+
+#services .h6p {
+  margin-bottom: 15px;
+}
+
+#services .services_p--information {
+ margin-top: 0;
+ margin-bottom: 0;
+ line-height: normal;
 }
 
 #services .text-decoration {
@@ -268,33 +284,51 @@ nav {
 
 #services .bi-journal-check {
   font-size: 45px;
-  margin   : 20px;
-  color    : var(--red);
+  margin   : 20px 0;
+  color    : var(--green);
 }
 
 #services .bi-megaphone-fill {
   font-size: 45px;
-  margin   : 20px;
-  color    : var(--yellow);
+  margin   : 20px 0;
+  color    : var(--orange);
 }
 
 #services .bi-robot {
   font-size: 45px;
-  margin   : 20px;
+  margin   : 20px 0;
   color    : var(--blue);
 }
 
 #services .bi-code-slash {
   font-size: 45px;
-  margin   : 20px;
-  color    : var(--green);
+  margin   : 20px 0;
+  color    : var(--red);
 }
 
+
+#services .bi-phone {
+  font-size: 45px;
+  margin   : 20px 0;
+  color    : var(--black);
+}
+
+#services .bi-lightning-fill {
+  font-size: 45px;
+  margin   : 20px 0;
+  color    : var(--yellow);
+}
+
+#services .row div {
+  margin   : 40px 0;
+}
 
 #services div:hover>.bi-journal-check,
 #services div:hover>.bi-megaphone-fill,
 #services div:hover>.bi-robot, 
-#services div:hover>.bi-code-slash {
+#services div:hover>.bi-code-slash, 
+#services div:hover>.bi-phone, 
+#services div:hover>.bi-lightning-fill {
   transition: all 0.3s; 
   color: #414141;
 }
@@ -323,6 +357,7 @@ nav {
 }
 
 .btn-portfolio:hover {
+  transition: all 0.3s; 
   background-color: gray;
   box-shadow      : none !important;
 }
@@ -400,6 +435,7 @@ nav {
 }
 
 .cont figure:hover .overlayBottom {
+  opacity: 1;
   transition   : all 0.5s;
   border-radius: 10px;
   transform    : translateY(-300px);
@@ -415,7 +451,15 @@ nav {
 }
 
 #contact a:hover>.ab {
+  transition: all 0.3s; 
   color: #414141;
+}
+
+#contact .fa-linkedin-in, 
+#contact .fa-twitter, 
+#contact .fa-github, 
+#contact .fa-envelope {
+  font-size: 50px;
 }
 
 #contact .fa-linkedin-in {
@@ -427,7 +471,7 @@ nav {
 }
 
 #contact .fa-github {
-  color: black;
+  color: var(--black);
 }
 
 #contact .fa-envelope {
