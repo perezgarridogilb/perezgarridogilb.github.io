@@ -386,8 +386,8 @@ nav {
 .cont figure img {
   width      : 100%;
   height     : 100%;
-  transition : all 400ms linear;
-  will-change: transform;
+  transition : all 400ms;
+  border-radius: 10px;
 }
 
 .cont figure:hover>img {
