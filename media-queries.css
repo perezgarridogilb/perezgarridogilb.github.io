@@ -35,6 +35,12 @@
         font-size: 1.17rem;
     }
 
+    .rw {
+
+        margin-right: -35px!important;
+        margin-left: -35px!important;
+    }
+
 }
 
 @media (max-width: 991px) {
