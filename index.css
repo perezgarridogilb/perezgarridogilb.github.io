@@ -382,16 +382,21 @@ nav {
   overflow     : hidden;
   cursor       : pointer;
   margin       : auto;
+  /* This repair the overflow of border radius hover in apple devices */
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 
-.cont figure img {
+.cont figure picture img.fs {
   width      : 100%;
   height     : 100%;
   transition : all 400ms;
   border-radius: 10px;
 }
 
-.cont figure:hover>img {
+.cont figure:hover> picture img.fs {
   transition   : all 1s;
   border-radius: 10px;
   transform    : scale(1.3);
