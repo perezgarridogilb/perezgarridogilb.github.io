@@ -52,6 +52,13 @@ $(document).ready(function(){
     });
   });
 
+  const documentHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+   }
+   window.addEventListener('resize', documentHeight)
+   documentHeight()
+
 ScrollReveal().reveal('.imagen_fondo', { delay: 250 });
 ScrollReveal().reveal('.ws', { delay: 250 });
 ScrollReveal().reveal('.tss', { delay: 250 });

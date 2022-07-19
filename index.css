@@ -8,7 +8,8 @@
   --yellow: #ffa700;
   --blue: #3367d6; 
   --grey: #414141; 
-  --black: #000000; 
+  --black: #000000;
+  --doc-height: 100%; 
 }
 
 * {
@@ -178,6 +179,7 @@ nav {
   background-attachment: fixed;
   background-size      : cover;
   height               : 100vh;
+  height: var(--doc-height);
   min-height           : fill-available;
   min-height           : -webkit-fill-available; 
   min-width: 320px; 
@@ -213,6 +215,7 @@ nav {
   right           : 0;
   background-color: rgba(0, 0, 0, 0.8);
   height          : 100vh;
+  height: var(--doc-height);
   min-height      : fill-available; 
   min-height      : -webkit-fill-available;
   min-width: 320px; 

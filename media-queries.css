@@ -1,12 +1,3 @@
-@media (max-width: 1199px) {
-    .modal-nav-body {
-        height    : 100vh;
-        /* mobile viewport bug fix */
-        min-height: -webkit-fill-available;
-    }
-
-}
-
 @media (min-width: 1200px) {
     .row {
         margin-right: -25px;
