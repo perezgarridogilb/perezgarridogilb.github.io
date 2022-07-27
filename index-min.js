@@ -52,9 +52,11 @@ $(document).ready(function(){
     });
   });
 
-ScrollReveal().reveal('.imagen_fondo', { delay: 250 });
-ScrollReveal().reveal('.ws', { delay: 250 });
-ScrollReveal().reveal('.tss', { delay: 250 });
-ScrollReveal().reveal('.Bootstrap', { delay: 450 });
-ScrollReveal().reveal('.Python', { delay: 450 });
-ScrollReveal().reveal('.PostgreSQL', { delay: 450 });
+
+ScrollReveal().reveal('.titles', { delay: 515 });
+ScrollReveal().reveal('.about', { delay: 585 });
+
+ScrollReveal().reveal('.skills', { delay: 635 });
+ScrollReveal().reveal('.text-center', { delay: 685 });
+
+ScrollReveal().reveal('.subtitle', { delay: 585 });
