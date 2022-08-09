@@ -178,6 +178,7 @@ nav {
   background-attachment: fixed;
   background-size      : cover;
   height               : 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height           : fill-available;
   min-height           : -webkit-fill-available; 
   min-width: 320px; 
@@ -213,6 +214,7 @@ nav {
   right           : 0;
   background-color: rgba(0, 0, 0, 0.8);
   height          : 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height      : fill-available; 
   min-height      : -webkit-fill-available;
   min-width: 320px; 
