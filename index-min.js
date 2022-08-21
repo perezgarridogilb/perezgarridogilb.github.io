@@ -57,6 +57,22 @@ $(document).ready(function(){
     });
   });
 
+  function debounce(func, timeout = 300){
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    };
+  }
+  
+  window.addEventListener("mousewheel", e => {
+    document.querySelector("div").classList.remove("hidden");
+  });
+  
+  window.addEventListener("mousewheel", debounce(e => {
+    document.querySelector("div").classList.add("hidden");
+  }));
+
 ScrollReveal().reveal('.imagen_fondo', { delay: 250 });
 ScrollReveal().reveal('.ws', { delay: 250 });
 ScrollReveal().reveal('.tss', { delay: 250 });
