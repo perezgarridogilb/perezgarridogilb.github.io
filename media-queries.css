@@ -86,6 +86,12 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    #main {
+        background-attachment: scroll;
+    }
+}
+
 @media (max-width: 767px) {
 
     #main .ws {
@@ -109,7 +115,23 @@
     }
 
     #main .imagen_fondo {
-        background-image: url(./assets/images/bg_responsive.webp);
+        background-image       : url(./assets/images/bg_responsive.webp) no-repeat center center fixed !important;
+        -webkit-background-size: inherit !important;
+        -moz-background-size   : inherit !important;
+        -o-background-size     : inherit !important;
+        background-size        : inherit !important;
+        top                    : 0;
+        left                   : 0;
+        width                  : 100vw;
+        height                 : -webkit-fill-available;
+        height                 : calc(var(--vh, 1vh) * 100) !important;
+        margin                 : 0 auto !important;
+        -webkit-background-size: inherit !important;
+        -moz-background-size   : inherit !important;
+        -o-background-size     : inherit !important;
+        background-size        : inherit !important;
+        background-attachment  : fixed !important;
+
     }
 
     section {
