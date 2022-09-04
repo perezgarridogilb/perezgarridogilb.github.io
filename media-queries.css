@@ -84,6 +84,10 @@
         min-height: -webkit-fill-available !important;
         height    : calc(var(--vh, 1vh) * 100) !important;
     }
+
+    #contact .text-center div {
+        padding: 40px !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -155,10 +159,6 @@
         padding-right: 10px !important;
     }
 
-    #contact .text-center div {
-        padding: 20px !important;
-    }
-
     #header,
     #main p,
     #me,
@@ -170,4 +170,39 @@
         padding-right: 10px;
     }
 
+    .text-portfolio {
+        font-size: 12px !important;
+    }
+
+    .btn-portfolio {
+        height: 23px !important;
+        width : 88px !important;
+    }
+
+    #contact .fa-linkedin-in,
+    #contact .fa-twitter,
+    #contact .fa-github,
+    #contact .fa-envelope {
+        font-size : 43px !important;
+    }
+
+    #contact .text-center div {
+        padding: 20px !important;
+    }
+
+}
+
+@media screen and (orientation:landscape) {
+    #main .imagen_fondo {
+      min-height: 535px!important;
+    
+    }
+
+    #main .overlay {
+        min-height: 535px!important;
+    }
+
+    #main .row {
+        min-height: 535px!important;
+    }
 }

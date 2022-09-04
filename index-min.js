@@ -70,10 +70,3 @@ $(document).ready(function(){
   
   // // // Re-calculate on device orientation change
   // // window.addEventListener('orientationchange', calculateVh);
-
-ScrollReveal().reveal('.imagen_fondo', { delay: 250 });
-ScrollReveal().reveal('.ws', { delay: 250 });
-ScrollReveal().reveal('.tss', { delay: 250 });
-ScrollReveal().reveal('.Bootstrap', { delay: 450 });
-ScrollReveal().reveal('.Python', { delay: 450 });
-ScrollReveal().reveal('.PostgreSQL', { delay: 450 });
