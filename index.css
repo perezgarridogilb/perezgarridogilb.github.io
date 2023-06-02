@@ -361,6 +361,10 @@ nav {
   color: #2496ed;
 }
 
+#about .fa-laravel {
+  color: #ff2e21;
+}
+
 #about .fa-github {
   color: black !important;
 }
