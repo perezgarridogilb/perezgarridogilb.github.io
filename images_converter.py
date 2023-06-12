@@ -5,7 +5,7 @@ from PIL import Image
 
 import os
 
-folder = "./assets/portfolio/"
+folder = "./assets/"
 
 if __name__ == "__main__":
     
@@ -13,12 +13,12 @@ if __name__ == "__main__":
         name, extension = os.path.splitext(os.path.basename(folder + filename))
         # print(name)
         # print("")
-        if extension in [".png", ".jpeg"]:
+        if extension in [".png", ".JPEG"]:
             picture = Image.open(folder + filename)
             a=round(picture.width * 0.66)
             b=round(picture.height * 0.66)
             picture = picture.resize((a, b))
-            picture.save(folder + '/{}.webp'.format(name), "WEBP")
+            picture.save(folder + '/{}.png'.format(name), "PNG")
 
             # img = Image.open('./assets/portfolio/PlatziConf.png')
             # img.save('./assets/portfolio/PlatziConf.webp')
