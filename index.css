@@ -2,23 +2,23 @@
 
 :root {
   --just-green: #135bb3;
-  --red       : #d62d20;
-  --orange    : #e34c26;
-  --green     : #008744;
-  --yellow    : #ffa700;
-  --blue      : #3367d6;
-  --grey      : #414141;
-  --black     : #000000;
+  --red: #d62d20;
+  --orange: #e34c26;
+  --green: #008744;
+  --yellow: #ffa700;
+  --blue: #3367d6;
+  --grey: #414141;
+  --black: #000000;
 }
 
 * {
-  margin    : 0;
-  padding   : 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-  width : 11px;
+  width: 11px;
   height: 10px;
 }
 
@@ -33,18 +33,18 @@
 
 
 ::-webkit-scrollbar-thumb {
-  border          : 2px solid rgba(0, 0, 0, 0);
-  background-clip : content-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-clip: content-box;
   background-color: #505050c1;
-  border-radius   : 7px;
-  transition      : all 0.6s;
+  border-radius: 7px;
+  transition: all 0.6s;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background : white;
-  overflow   : overlay;
-  min-width  : 320px;
+  background: white;
+  overflow: overlay;
+  min-width: 320px;
 }
 
 section {
@@ -59,13 +59,13 @@ section {
 #portfolio,
 #contact,
 #footer {
-  padding-left : 10px !important;
+  padding-left: 10px !important;
   padding-right: 10px !important;
 }
 
 .h2 {
   margin-bottom: 30px;
-  font-size    : 35px;
+  font-size: 35px;
 }
 
 .h5 {
@@ -74,25 +74,25 @@ section {
 
 .text-cv {
   background-color: var(--just-green);
-  font-size       : 1rem;
+  font-size: 1rem;
 }
 
 .btn-cv {
-  align-items     : center;
-  justify-content : center;
-  border-radius   : 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
   background-color: var(--just-green);
-  display         : inline-flex;
-  color           : white;
-  height          : 50px;
-  transition      : all 0.6s;
-  width           : 177.77px;
+  display: inline-flex;
+  color: white;
+  height: 50px;
+  transition: all 0.6s;
+  width: 177.77px;
 }
 
 .btn-cv:hover {
-  transition      : all 0.6s;
+  transition: all 0.6s;
   background-color: gray;
-  box-shadow      : none !important;
+  box-shadow: none !important;
 }
 
 /* .btn-cv,
@@ -148,9 +148,9 @@ section {
 } */
 
 .btn-cv:after {
-  left     : 100%;
+  left: 100%;
   transform: translateX(var(--progress, 0)) rotate(180deg);
-  z-index  : -1;
+  z-index: -1;
 }
 
 .btn-cv:hover:before {
@@ -180,17 +180,17 @@ section {
  */
 nav {
   background-color: 0;
-  transition      : 0.6s !important;
+  transition: 0.6s !important;
 }
 
 #header.abajo {
   background-color: rgba(0, 0, 0, 0.9);
-  transition      : 0.6s;
+  transition: 0.6s;
 }
 
 .color {
   background-color: rgba(0, 0, 0, 0.9);
-  transition      : 0.3s;
+  transition: 0.3s;
 }
 
 .hidden {
@@ -199,15 +199,15 @@ nav {
 
 .centrado {
   background-color: black;
-  position        : fixed;
-  top             : 0;
-  left            : 0;
-  right           : 0;
-  bottom          : 0;
-  justify-content : center;
-  align-items     : center;
-  overflow        : hidden;
-  z-index         : 999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 999999;
 }
 
 .nav-link {
@@ -216,28 +216,28 @@ nav {
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='4' stroke-linecap='butt' stroke-miterlimit='20' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  font-family     : "Font Awesome 5 Free";
-  content         : "\f0c9";
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c9";
 }
 
 .lds-ripple {
-  display : inline-block;
-  margin  : auto;
-  left    : 0;
-  right   : 0;
-  top     : 0;
-  bottom  : 0;
+  display: inline-block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   position: fixed;
-  width   : 80px;
-  height  : 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .lds-ripple div {
-  position     : absolute;
-  border       : 4px solid #fff;
-  opacity      : 1;
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
   border-radius: 50%;
-  animation    : lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
 .lds-ripple div:nth-child(2) {
@@ -246,84 +246,84 @@ nav {
 
 @keyframes lds-ripple {
   0% {
-    top    : 50%;
-    left   : 50%;
-    width  : 0;
-    height : 0;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
     opacity: 1;
   }
 
   100% {
-    top    : 0px;
-    left   : 0px;
-    width  : 100%;
-    height : 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
     opacity: 0;
   }
 }
 
 
 #main .center {
-  display     : block;
-  width       : 250px;
-  margin-left : auto;
+  display: block;
+  width: 250px;
+  margin-left: auto;
   margin-right: auto;
 }
 
 #main .imagen_fondo {
-  background-image     : url(./assets/images/bg.jpeg);
-  background-repeat    : no-repeat;
+  background-image: url(./assets/images/bg.jpeg);
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size      : cover;
-  height               : 100vh;
-  min-height           : -webkit-fill-available;
-  height               : 590px;
-  min-height           : fill-available;
-  min-height           : -webkit-fill-available;
-  min-width            : 320px;
-  z-index              : -1;
+  background-size: cover;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  height: 590px;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  min-width: 320px;
+  z-index: -1;
 }
 
 .tss {
-  display        : block;
-  line-height    : 1.2cm;
-  margin-right   : auto;
-  margin-left    : auto;
-  font-size      : 45px;
-  display        : flex;
+  display: block;
+  line-height: 1.2cm;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 45px;
+  display: flex;
   justify-content: center;
-  align-items    : center;
+  align-items: center;
 }
 
 .tsn {
-  display        : block;
-  line-height    : 1.2cm;
-  margin-right   : auto;
-  margin-left    : auto;
-  font-size      : 60px;
-  display        : flex;
+  display: block;
+  line-height: 1.2cm;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 60px;
+  display: flex;
   justify-content: center;
-  align-items    : center;
+  align-items: center;
 }
 
 #main .overlay {
-  top             : 0;
-  bottom          : 0;
-  left            : 0;
-  right           : 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.92);
-  height          : 100vh;
-  min-height      : -webkit-fill-available;
-  height          : 590px;
-  min-height      : fill-available;
-  min-height      : -webkit-fill-available;
-  min-width       : 320px;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  height: 590px;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  min-width: 320px;
 }
 
 #main .rw {
-  display        : flex;
+  display: flex;
   justify-content: center;
-  align-items    : center;
+  align-items: center;
 }
 
 #about p {
@@ -332,7 +332,7 @@ nav {
 
 #about .about p {
   padding-right: 80px;
-  line-height  : 40px;
+  line-height: 40px;
 }
 
 #about .about a {
@@ -340,12 +340,12 @@ nav {
 }
 
 #about .presentation {
-  font-size : 1.5em;
+  font-size: 1.5em;
   margin-top: 30px;
 }
 
 #about img {
-  width : 65px;
+  width: 65px;
   height: 65px;
 }
 
@@ -378,13 +378,13 @@ nav {
 }
 
 #services .services_p--information {
-  margin-top   : 0;
+  margin-top: 0;
   margin-bottom: 0;
-  line-height  : normal;
+  line-height: normal;
 }
 
 #services .text-decoration {
-  padding-left : 40px !important;
+  padding-left: 40px !important;
   padding-right: 40px !important;
 }
 
@@ -418,8 +418,8 @@ nav {
 #services .bi-code-slash,
 #services .bi-phone,
 #services .bi-lightning-fill {
-  font-size : 45px;
-  margin    : 20px 0;
+  font-size: 45px;
+  margin: 20px 0;
   transition: all 0.3s;
 }
 
@@ -434,13 +434,13 @@ nav {
 #services div:hover>.bi-phone,
 #services div:hover>.bi-lightning-fill {
   transition: all 0.6s;
-  color     : #414141;
+  color: #414141;
 }
 
 .text-portfolio {
   background-color: var(--just-green);
-  text-align      : center;
-  font-size       : 14px;
+  text-align: center;
+  font-size: 14px;
 }
 
 #portfolio p .subtitle {
@@ -453,18 +453,18 @@ nav {
 
 .btn-portfolio {
   border-radius: 1px;
-  background   : #191919;
-  color        : #f5f5f5;
-  height       : 27px;
-  width        : 104px;
-  transition   : all 0.3s;
-  padding      : 0%;
+  background: #191919;
+  color: #f5f5f5;
+  height: 27px;
+  width: 104px;
+  transition: all 0.3s;
+  padding: 0%;
 }
 
 .btn-portfolio:hover {
-  transition      : all 0.3s;
+  transition: all 0.3s;
   background-color: gray;
-  box-shadow      : none !important;
+  box-shadow: none !important;
 }
 
 #portfolio p {
@@ -472,49 +472,49 @@ nav {
 }
 
 .cont {
-  gap          : 20px;
-  margin       : 0 0 0 0;
+  gap: 20px;
+  margin: 0 0 0 0;
   margin-bottom: 20px;
 }
 
 .cont figure {
-  position                   : relative;
-  border-radius              : 10px;
-  object-fit                 : cover;
-  width                      : 100%;
-  height                     : 190px;
-  max-width                  : 373.33px;
-  overflow                   : hidden;
-  cursor                     : pointer;
-  margin                     : auto;
+  position: relative;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 190px;
+  max-width: 373.33px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: auto;
   /* This repair the overflow of border radius hover in apple devices */
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility   : hidden;
-  -webkit-transform          : translate3d(0, 0, 0);
-  -moz-transform             : translate3d(0, 0, 0);
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 
 .cont figure picture img.fs {
-  width        : 100%;
-  height       : 100%;
-  transition   : all 400ms;
+  width: 100%;
+  height: 100%;
+  transition: all 400ms;
   border-radius: 10px;
 }
 
 .cont figure:hover>picture img.fs {
-  transition   : all 1s;
+  transition: all 1s;
   border-radius: 10px;
-  transform    : scale(1.3);
+  transform: scale(1.3);
 }
 
 .fs {
   border-radius: 10px;
-  object-fit   : cover;
-  height       : 100%;
-  width        : 100%;
-  max-height   : 190px;
-  max-width    : 373.33px;
-  padding      : auto;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-height: 190px;
+  max-width: 373.33px;
+  padding: auto;
 }
 
 .overlayBottom .portfolios p {
@@ -523,9 +523,9 @@ nav {
 }
 
 .overl {
-  position        : absolute;
-  opacity         : 0;
-  transition      : all 0.3s;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s;
   background-color: #008cba;
 }
 
@@ -534,22 +534,22 @@ nav {
 }
 
 .overlayBottom {
-  position        : absolute;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  top             : 300px;
-  height          : 100%;
-  width           : 100%;
-  border-radius   : 10px;
-  z-index         : 1;
-  display         : flex;
-  flex-direction  : column;
+  top: 300px;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cont figure:hover .overlayBottom {
-  opacity      : 1;
-  transition   : all 0.5s;
+  opacity: 1;
+  transition: all 0.5s;
   border-radius: 10px;
-  transform    : translateY(-300px);
+  transform: translateY(-300px);
 }
 
 #contact p {
@@ -557,20 +557,20 @@ nav {
 }
 
 #contact a {
-  margin-bottom  : 10px;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
 #contact a:hover>.ab {
   transition: all 0.6s;
-  color     : #414141;
+  color: #414141;
 }
 
 #contact .fa-linkedin-in,
 #contact .fa-twitter,
 #contact .fa-github,
 #contact .fa-envelope {
-  font-size : 50px;
+  font-size: 50px;
   transition: all 0.3s;
 }
 
@@ -600,4 +600,30 @@ nav {
 
 .copyright {
   line-height: 0.30cm;
+}
+
+/* from name gradient */
+
+.gradient-text {
+  animation: fluido 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+@keyframes fluido {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
